@@ -1,0 +1,207 @@
+
+body{
+    background-color: #212222;
+}
+
+#title {
+    font-size: 30px;
+}
+
+/*carousel*/
+#carousel {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(220, 238, 238);
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.images{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(223, 223, 243);
+    padding: 10px;
+    transition: all 0.5s;
+}
+
+.images h5{
+    text-align: center;
+    padding: 5px;
+    background-color: #000000;
+    color: beige;
+}
+
+.image-caption {
+    position: relative;
+    top: -30px;
+    border-radius:  0 0 8px 8px;
+    transition: all 0.3s;
+}
+
+.images img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;   
+    transition: all 0.3s;
+    border-radius: 8px;
+}
+
+.images:hover .image-caption{
+    transform: scale(1.07);
+    top: -26px;
+}
+
+.images:hover img{
+    transform: scale(1.07);
+}
+
+#next {
+    position: absolute;
+    right: 10px;
+    top: 180px; 
+    z-index: 1;
+    transition: all 1s;
+}
+
+#previous {
+    position: absolute;
+    left: 10px;
+    top: 180px;
+    z-index: 1;
+    transition: all 1s;
+}
+
+#next i{
+    opacity: 0.7;
+    font-size: 50px;
+    transition: all 0.3s;
+    color: #ff0505;
+}
+
+#next i:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+#previous i{
+    opacity: 0.7;
+    font-size: 50px;
+    transition: all 0.3s;
+    color: #ff0505;
+}
+
+#previous i:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+/*hero list*/
+#item-heading {
+    background-color: #212222;
+    color: antiquewhite;
+    padding: 1%;
+}
+
+.card img {
+    object-fit: cover;
+    aspect-ratio: 4/3;
+}
+
+.heroDiv {
+    box-shadow: 2px 4px 8px 4px #5593eb;
+    transition: all 0.2s;
+    border-width: 0cap;
+}
+
+.card {
+    border-width: 5px;
+}
+
+.heroDiv:hover {
+    transform: scale(1.03);
+    box-shadow: 2px 4px 8px 4px #ac3333;
+}
+
+/*favourites icon*/
+.favourites{
+    font-size: 30px;
+    transition: all 0.3s;
+    color: #d60a0a;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.favourites:hover{
+    transform: scale(1.2);
+}
+
+.item-body {
+    padding-top: 1%;
+}
+
+/*Superhero Page*/
+#image-div {
+    text-align: center;
+}
+
+#hero-main{
+    background-color: #323333;
+    color: antiquewhite;
+}
+
+.container {
+    background-color: #212222;
+}
+
+#item-heading {
+    text-align: center;
+}
+
+#hero-content{
+    padding: 2%;
+}
+
+#hero-details h5{
+    color: #ff0505;
+}
+
+#hero-image {
+    object-fit: cover;
+    height: auto;
+    aspect-ratio: 4/4;
+}
+
+/* search bar */
+#selectOption {
+    z-index: 2;
+    color: aliceblue;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    padding: 1%;
+    top:60px;
+    background-color: #212222;
+    width: 300px;
+    right: 1%;
+}
+
+.search-result {
+    text-decoration: none;
+    z-index: 3;
+}
+
+.search-result:hover {
+    background-color: cadetblue;
+    cursor: pointer;
+}
+
+/* Previous/next pages */
+#navigation {
+    background-color: #383d3d;
+    margin-top: 20px;
+    padding-top: 35px;
+    height: 100px;
+}
+
+
