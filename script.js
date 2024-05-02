@@ -279,6 +279,19 @@ function getData(page) {
     getSuperheroData(url);
 }
 
+// push next and previous up/down buttons on navbar collapse/show 
+let navbarToggler = document.getElementById("navbarToggler");
+navbarToggler.addEventListener("click", ()=> {
+    if(navbarToggler.classList.contains("collapsed")) {
+        document.getElementById("next").style.top = "180px";
+        document.getElementById("previous").style.top = "180px";
+    }
+    else {
+        document.getElementById("next").style.top = "320px";
+        document.getElementById("previous").style.top = "320px";
+    }
+})
+
 
 getSuperheroData(url);   
 
