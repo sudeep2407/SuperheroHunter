@@ -1,7 +1,6 @@
 let apiKey = "63e3c8ff422f64eebbfd25fdfdea3703";
 let privateKey = "08f5974e89cad741f4fd9238347f152fe952a555";
-let ts = "qwertyuiopasdfghjklzxcvbnmqwerty"
-
+let ts = Date.now().toString();
 let hash = CryptoJS.MD5(ts+privateKey+apiKey);
 
 let total = 0;
